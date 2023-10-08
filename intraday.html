@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<title>Example</title>
+<style>
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .card {
+    /* flex: 0 0 540px; */
+    /* display: flex; */
+    /* BB@tv-basicstudies */
+    margin: 0px;
+    /* border: 1px solid #ccc; */
+    /* box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3); */
+    /* height: 410px !important; */
+  }
+
+  body {
+    background-color: white;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #38444d;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a,
+  .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover,
+  .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+
+  li.dropdown {
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+</style>
+<body>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="fx_1d.html">Daily</a></li>
+    <li><a href="fx_4h.html">4-Hour</a></li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+      </div>
+    </li>
+  </ul>
+  <main class="cards">
+    <article class="card">
+      <!-- TradingView Widget BEGIN -->
+      <div class="tradingview-widget-container">
+        <div id="tradingview_aff59"></div>
+        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FOREXCOM" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
+        <script
+          type="text/javascript"
+          src="https://s3.tradingview.com/tv.js"
+        ></script>
+        <script type="text/javascript">
+          new TradingView.widget({
+            autosize: false,
+            symbol: "CAPITALCOM:DXY",
+            interval: "D",
+            timezone: "Etc/UTC",
+            hide_legend: true,
+
+            theme: "dark",
+            style: "1",
+            locale: "en",
+            toolbar_bg: "#f1f3f6",
+            enable_publishing: false,
+            studies: [],
+            allow_symbol_change: true,
+            container_id: "tradingview_aff59",
+            width: 540,
+            height: 410,
+            hide_top_toolbar: false,
+            studies: ["STD;Bollinger_Bands"],
+          });
+        </script>
+      </div>
+      <!-- TradingView Widget END -->
+    </article>
+    <article class="card">
+      <!-- TradingView Widget BEGIN -->
+      <div class="tradingview-widget-container">
+        <div id="tradingview_aff5911"></div>
+        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FOREXCOM" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
+        <script
+          type="text/javascript"
+          src="https://s3.tradingview.com/tv.js"
+        ></script>
+        <script type="text/javascript">
+          new TradingView.widget({
+            autosize: false,
+            symbol: "FOREXCOM:XAUUSD",
+            interval: "D",
+            timezone: "Etc/UTC",
+            hide_legend: true,
+            hide_volume: true,
+            theme: "dark",
+            style: "1",
+            locale: "en",
+            toolbar_bg: "#f1f3f6",
+            enable_publishing: false,
+            studies: [],
+            allow_symbol_change: true,
+            container_id: "tradingview_aff5911",
+            width: 540,
+            height: 410,
+            hide_top_toolbar: false,
+            studies: ["STD;Bollinger_Bands"],
+          });
+        </script>
+      </div>
+      <!-- TradingView Widget END -->
+    </article>
+    <article class="card">
+      <!-- TradingView Widget BEGIN -->
+      <div class="tradingview-widget-container">
+        <div id="tradingview_aff5942"></div>
+        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FOREXCOM" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
+        <script
+          type="text/javascript"
+          src="https://s3.tradingview.com/tv.js"
+        ></script>
+        <script type="text/javascript">
+          new TradingView.widget({
+            autosize: false,
+            symbol: "FOREXCOM:EURUSD",
+            interval: "D",
+            timezone: "Etc/UTC",
+            hide_legend: true,
+            theme: "dark",
+            style: "1",
+            locale: "en",
+            toolbar_bg: "#f1f3f6",
+            enable_publishing: false,
+            studies: [],
+            allow_symbol_change: true,
+            container_id: "tradingview_aff5942",
+            width: 540,
+            height: 410,
+            hide_top_toolbar: false,
+            studies: ["STD;Bollinger_Bands"],
+          });
+        </script>
+      </div>
+      <!-- TradingView Widget END -->
+    </article>
+    <article class="card">
+      <!-- TradingView Widget BEGIN -->
+      <div class="tradingview-widget-container">
+        <div id="tradingview_aff5922"></div>
+        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FOREXCOM" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
+        <script
+          type="text/javascript"
+          src="https://s3.tradingview.com/tv.js"
+        ></script>
+        <script type="text/javascript">
+          new TradingView.widget({
+            autosize: false,
+            symbol: "FOREXCOM:GBPUSD",
+            interval: "D",
+            timezone: "Etc/UTC",
+            hide_legend: true,
+
+            theme: "dark",
+            style: "1",
+            locale: "en",
+            toolbar_bg: "#f1f3f6",
+            enable_publishing: false,
+            studies: [],
+            allow_symbol_change: true,
+            container_id: "tradingview_aff5922",
+            width: 540,
+            height: 410,
+            hide_top_toolbar: false,
+            studies: ["STD;Bollinger_Bands"],
+          });
+        </script>
+      </div>
+      <!-- TradingView Widget END -->
+    </article>
+    <article class="card">
+      <!-- TradingView Widget BEGIN -->
+      <div class="tradingview-widget-container">
+        <div id="tradingview_aff5933"></div>
+        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FOREXCOM" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
+        <script
+          type="text/javascript"
+          src="https://s3.tradingview.com/tv.js"
+        ></script>
+        <script type="text/javascript">
+          new TradingView.widget({
+            autosize: false,
+            symbol: "FOREXCOM:USDCAD",
+            interval: "D",
+            timezone: "Etc/UTC",
+            hide_legend: true,
+
+            theme: "dark",
+            style: "1",
+            locale: "en",
+            toolbar_bg: "#f1f3f6",
+            enable_publishing: false,
+            studies: [],
+            allow_symbol_change: true,
+            container_id: "tradingview_aff5933",
+            width: 540,
+            height: 410,
+            hide_top_toolbar: false,
+            studies: ["STD;Bollinger_Bands"],
+          });
+        </script>
+      </div>
+      <!-- TradingView Widget END -->
+    </article>
+    <article class="card">
+      <!-- TradingView Widget BEGIN -->
+      <div class="tradingview-widget-container">
+        <div id="tradingview_aff5912"></div>
+        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FOREXCOM" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
+        <script
+          type="text/javascript"
+          src="https://s3.tradingview.com/tv.js"
+        ></script>
+        <script type="text/javascript">
+          new TradingView.widget({
+            autosize: false,
+            symbol: "FOREXCOM:USDJPY",
+            interval: "D",
+            timezone: "Etc/UTC",
+            hide_legend: true,
+
+            theme: "dark",
+            style: "1",
+            locale: "en",
+            toolbar_bg: "#f1f3f6",
+            enable_publishing: false,
+            studies: [],
+            allow_symbol_change: true,
+            container_id: "tradingview_aff5912",
+            width: 540,
+            height: 410,
+            hide_top_toolbar: false,
+            studies: ["STD;Bollinger_Bands"],
+          });
+        </script>
+      </div>
+      <!-- TradingView Widget END -->
+    </article>
+    <article class="card">
+      <!-- TradingView Widget BEGIN -->
+      <div class="tradingview-widget-container">
+        <div id="tradingview_aff5921"></div>
+        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FOREXCOM" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
+        <script
+          type="text/javascript"
+          src="https://s3.tradingview.com/tv.js"
+        ></script>
+        <script type="text/javascript">
+          new TradingView.widget({
+            autosize: false,
+            symbol: "FOREXCOM:AUDUSD",
+            interval: "D",
+            timezone: "Etc/UTC",
+            hide_legend: true,
+
+            theme: "dark",
+            style: "1",
+            locale: "en",
+            toolbar_bg: "#f1f3f6",
+            enable_publishing: false,
+            studies: [],
+            allow_symbol_change: true,
+            container_id: "tradingview_aff5921",
+            width: 540,
+            height: 410,
+            hide_top_toolbar: false,
+            studies: ["STD;Bollinger_Bands"],
+          });
+        </script>
+      </div>
+      <!-- TradingView Widget END -->
+    </article>
+    <article class="card">
+      <!-- TradingView Widget BEGIN -->
+      <div class="tradingview-widget-container">
+        <div id="tradingview_aff5943"></div>
+        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FOREXCOM" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
+        <script
+          type="text/javascript"
+          src="https://s3.tradingview.com/tv.js"
+        ></script>
+        <script type="text/javascript">
+          new TradingView.widget({
+            autosize: false,
+            symbol: "FOREXCOM:NZDUSD",
+            hide_legend: true,
+            interval: "D",
+            timezone: "Etc/UTC",
+
+            theme: "dark",
+            style: "1",
+            locale: "en",
+            toolbar_bg: "#f1f3f6",
+            enable_publishing: false,
+            studies: [],
+            allow_symbol_change: true,
+            container_id: "tradingview_aff5943",
+            width: 540,
+            height: 410,
+            hide_top_toolbar: false,
+            studies: ["STD;Bollinger_Bands"],
+          });
+        </script>
+      </div>
+      <!-- TradingView Widget END -->
+    </article>
+    <article class="card">
+      <!-- TradingView Widget BEGIN -->
+      <div class="tradingview-widget-container">
+        <div id="tradingview_aff59aa"></div>
+        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FOREXCOM" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
+        <script
+          type="text/javascript"
+          src="https://s3.tradingview.com/tv.js"
+        ></script>
+        <script type="text/javascript">
+          new TradingView.widget({
+            autosize: false,
+            symbol: "FOREXCOM:CADJPY",
+            hide_legend: true,
+            interval: "D",
+            timezone: "Etc/UTC",
+            theme: "dark",
+            style: "1",
+            locale: "en",
+            toolbar_bg: "#f1f3f6",
+            enable_publishing: false,
+            studies: [],
+            allow_symbol_change: true,
+            container_id: "tradingview_aff59aa",
+            width: 540,
+            height: 410,
+            hide_top_toolbar: false,
+            studies: ["STD;Bollinger_Bands"],
+          });
+        </script>
+      </div>
+      <!-- TradingView Widget END -->
+    </article>
+    <article class="card">
+      <!-- TradingView Widget BEGIN -->
+      <div class="tradingview-widget-container">
+        <div id="tradingview_aff59aaa"></div>
+        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FOREXCOM" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
+        <script
+          type="text/javascript"
+          src="https://s3.tradingview.com/tv.js"
+        ></script>
+        <script type="text/javascript">
+          new TradingView.widget({
+            autosize: false,
+            symbol: "FOREXCOM:GBPJPY",
+            interval: "D",
+            timezone: "Etc/UTC",
+            hide_legend: true,
+
+            theme: "dark",
+            style: "1",
+            locale: "en",
+            toolbar_bg: "#f1f3f6",
+            enable_publishing: false,
+            studies: [],
+            allow_symbol_change: true,
+            container_id: "tradingview_aff59aaa",
+            width: 540,
+            height: 410,
+            hide_top_toolbar: false,
+            studies: ["STD;Bollinger_Bands"],
+          });
+        </script>
+      </div>
+      <!-- TradingView Widget END -->
+    </article>
+    <article class="card">
+      <!-- TradingView Widget BEGIN -->
+      <div class="tradingview-widget-container">
+        <div id="tradingview_aff591"></div>
+        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FOREXCOM" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
+        <script
+          type="text/javascript"
+          src="https://s3.tradingview.com/tv.js"
+        ></script>
+        <script type="text/javascript">
+          new TradingView.widget({
+            autosize: false,
+            symbol: "FOREXCOM:AUDJPY",
+            interval: "D",
+            timezone: "Etc/UTC",
+            hide_legend: true,
+
+            theme: "dark",
+            style: "1",
+            locale: "en",
+            toolbar_bg: "#f1f3f6",
+            enable_publishing: false,
+            studies: [],
+            allow_symbol_change: true,
+            container_id: "tradingview_aff591",
+            width: 540,
+            height: 410,
+            hide_top_toolbar: false,
+            studies: ["STD;Bollinger_Bands"],
+          });
+        </script>
+      </div>
+      <!-- TradingView Widget END -->
+    </article>
+    <article class="card">
+      <!-- TradingView Widget BEGIN -->
+      <div class="tradingview-widget-container">
+        <div id="tradingview_aff59"15"5"></div>
+        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FOREXCOM" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
+        <script
+          type="text/javascript"
+          src="https://s3.tradingview.com/tv.js"
+        ></script>
+        <script type="text/javascript">
+          new TradingView.widget({
+            autosize: false,
+            symbol: "FOREXCOM:NZDJPY",
+            interval: "D",
+            timezone: "Etc/UTC",
+            hide_legend: true,
+
+            theme: "dark",
+            style: "1",
+            locale: "en",
+            toolbar_bg: "#f1f3f6",
+            enable_publishing: false,
+            studies: [],
+            allow_symbol_change: true,
+            container_id: "tradingview_aff59"15"5",
+            width: 540,
+            height: 410,
+            hide_top_toolbar: false,
+            studies: ["STD;Bollinger_Bands"],
+          });
+        </script>
+      </div>
+      <!-- TradingView Widget END -->
+    </article>
+    <article class="card">
+      <!-- TradingView Widget BEGIN -->
+      <div class="tradingview-widget-container">
+        <div id="tradingview_aff55591aa"></div>
+        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FOREXCOM" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
+        <script
+          type="text/javascript"
+          src="https://s3.tradingview.com/tv.js"
+        ></script>
+        <script type="text/javascript">
+          new TradingView.widget({
+            autosize: false,
+            symbol: "FOREXCOM:EURJPY",
+            interval: "D",
+            timezone: "Etc/UTC",
+            hide_legend: true,
+
+            theme: "dark",
+            style: "1",
+            locale: "en",
+            toolbar_bg: "#f1f3f6",
+            enable_publishing: false,
+            studies: [],
+            allow_symbol_change: true,
+            container_id: "tradingview_aff55591aa",
+            width: 540,
+            height: 410,
+            hide_top_toolbar: false,
+            studies: ["STD;Bollinger_Bands"],
+          });
+        </script>
+      </div>
+      <!-- TradingView Widget END -->
+    </article>
+    <article class="card">
+      <!-- TradingView Widget BEGIN -->
+      <div class="tradingview-widget-container">
+        <div id="tradingview_aff591ssEE"></div>
+        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FOREXCOM" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
+        <script
+          type="text/javascript"
+          src="https://s3.tradingview.com/tv.js"
+        ></script>
+        <script type="text/javascript">
+          new TradingView.widget({
+            autosize: false,
+            symbol: "FOREXCOM:CHFJPY",
+            interval: "D",
+            timezone: "Etc/UTC",
+            hide_legend: true,
+
+            theme: "dark",
+            style: "1",
+            locale: "en",
+            toolbar_bg: "#f1f3f6",
+            enable_publishing: false,
+            studies: [],
+            allow_symbol_change: true,
+            container_id: "tradingview_aff591ssEE",
+            width: 540,
+            height: 410,
+            hide_top_toolbar: false,
+            studies: ["STD;Bollinger_Bands"],
+          });
+        </script>
+      </div>
+      <!-- TradingView Widget END -->
+    </article>
+    <article class="card">
+      <!-- TradingView Widget BEGIN -->
+      <div class="tradingview-widget-container">
+        <div id="tradingview_aff591s1sSS"></div>
+        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FOREXCOM" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
+        <script
+          type="text/javascript"
+          src="https://s3.tradingview.com/tv.js"
+        ></script>
+        <script type="text/javascript">
+          new TradingView.widget({
+            autosize: false,
+            symbol: "FOREXCOM:USDCHF",
+            interval: "D",
+            timezone: "Etc/UTC",
+            hide_legend: true,
+
+            theme: "dark",
+            style: "1",
+            locale: "en",
+            toolbar_bg: "#f1f3f6",
+            enable_publishing: false,
+            studies: [],
+            allow_symbol_change: true,
+            container_id: "tradingview_aff591s1sSS",
+            width: 540,
+            height: 410,
+            hide_top_toolbar: false,
+            studies: ["STD;Bollinger_Bands"],
+          });
+        </script>
+      </div>
+      <!-- TradingView Widget END -->
+    </article>
+    <article class="card">
+      <!-- TradingView Widget BEGIN -->
+      <div class="tradingview-widget-container">
+        <div id="tradingview_aff591sseeBB1"></div>
+        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FOREXCOM" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
+        <script
+          type="text/javascript"
+          src="https://s3.tradingview.com/tv.js"
+        ></script>
+        <script type="text/javascript">
+          new TradingView.widget({
+            autosize: false,
+            symbol: "NASDAQ:NDX",
+            interval: "D",
+            timezone: "Etc/UTC",
+            hide_legend: true,
+
+            theme: "dark",
+            style: "1",
+            locale: "en",
+            toolbar_bg: "#f1f3f6",
+            enable_publishing: false,
+            studies: [],
+            allow_symbol_change: true,
+            container_id: "tradingview_aff591sseeBB1",
+            width: 540,
+            height: 410,
+            hide_top_toolbar: false,
+            studies: ["STD;Bollinger_Bands"],
+            hide_volume: true,
+          });
+        </script>
+      </div>
+      <!-- TradingView Widget END -->
+    </article>
+    <article class="card">
+      <!-- TradingView Widget BEGIN -->
+      <div class="tradingview-widget-container">
+        <div id="tradingview_aff591sseeBB22"></div>
+        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FOREXCOM" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
+        <script
+          type="text/javascript"
+          src="https://s3.tradingview.com/tv.js"
+        ></script>
+        <script type="text/javascript">
+          new TradingView.widget({
+            autosize: false,
+            symbol: "BLACKBULL:US30",
+            interval: "D",
+            timezone: "Etc/UTC",
+            hide_legend: true,
+
+            theme: "dark",
+            style: "1",
+            locale: "en",
+            toolbar_bg: "#f1f3f6",
+            enable_publishing: false,
+            studies: [],
+            allow_symbol_change: true,
+            container_id: "tradingview_aff591sseeBB22",
+            width: 540,
+            height: 410,
+            hide_top_toolbar: false,
+            studies: ["STD;Bollinger_Bands"],
+            hide_volume: true,
+          });
+        </script>
+      </div>
+      <!-- TradingView Widget END -->
+    </article>
+    <article class="card">
+      <!-- TradingView Widget BEGIN -->
+      <div class="tradingview-widget-container">
+        <div id="tradingview_aff5911n"></div>
+        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FOREXCOM" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
+        <script
+          type="text/javascript"
+          src="https://s3.tradingview.com/tv.js"
+        ></script>
+        <script type="text/javascript">
+          new TradingView.widget({
+            autosize: false,
+            symbol: "FOREXCOM:XAGUSD",
+            interval: "D",
+            timezone: "Etc/UTC",
+            hide_legend: true,
+
+            theme: "dark",
+            style: "1",
+            locale: "en",
+            toolbar_bg: "#f1f3f6",
+            enable_publishing: false,
+            studies: [],
+            allow_symbol_change: true,
+            container_id: "tradingview_aff591n",
+            width: 540,
+            height: 410,
+            hide_top_toolbar: false,
+            studies: ["STD;Bollinger_Bands"],
+          });
+        </script>
+      </div>
+      <!-- TradingView Widget END -->
+    </article>
+  </main>
+</body>
