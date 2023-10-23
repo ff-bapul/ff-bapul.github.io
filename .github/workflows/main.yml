@@ -14,7 +14,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: AI Code Reviewer
-        uses: ff-bapul/ff-bapul@main
+        uses: ff-bapul/ff-bapul.github.io@main
         with:
           GITHUB_TOKEN: ${{ secrets.TOKEN_GITHUB }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
