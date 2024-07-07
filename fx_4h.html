@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<title>Example</title>
+<title>FX View</title>
 <style>
   .cards {
     display: flex;
@@ -7,12 +7,13 @@
     align-items: center;
   }
   .card {
-    /* flex: 0 0 420px; */
+    /* flex: 0 0 540px; */
     /* display: flex; */
+    /* BB@tv-basicstudies */
     margin: 0px;
     /* border: 1px solid #ccc; */
     /* box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3); */
-    /* height: 340px !important; */
+    /* height: 410px !important; */
   }
 
   body {
@@ -78,6 +79,8 @@
     <li><a href="index.html">Home</a></li>
     <li><a href="fx_1d.html">Daily</a></li>
     <li><a href="fx_4h.html">4-Hour</a></li>
+    <li><a href="intraday.html">IMP(15min)</a></li>
+    <li><a href="weekly.html"> Weekly </a></li>
     <li class="dropdown">
       <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
       <div class="dropdown-content">
@@ -95,6 +98,14 @@
           type="text/javascript"
           src="https://s3.tradingview.com/tv.js"
         ></script>
+           <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            // Check if user is logged in
+            if (sessionStorage.getItem('isLoggedIn') !== 'true') {
+                window.location.href = 'login.html'; // Redirect to login page if not logged in
+            }
+        });
+    </script>
         <script type="text/javascript">
           new TradingView.widget({
             autosize: false,
@@ -111,9 +122,10 @@
             studies: [],
             allow_symbol_change: true,
             container_id: "tradingview_aff59",
-            width: 420,
-            height: 340,
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
           });
         </script>
       </div>
@@ -131,11 +143,11 @@
         <script type="text/javascript">
           new TradingView.widget({
             autosize: false,
-            symbol: "COINBASE:BTCUSD",
+            symbol: "CAPITALCOM:DXY",
             interval: 240,
             timezone: "Etc/UTC",
             hide_legend: true,
-
+            hide_volume: true,
             theme: "dark",
             style: "1",
             locale: "en",
@@ -144,9 +156,10 @@
             studies: [],
             allow_symbol_change: true,
             container_id: "tradingview_aff5911",
-            width: 420,
-            height: 340,
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
           });
         </script>
       </div>
@@ -176,9 +189,10 @@
             studies: [],
             allow_symbol_change: true,
             container_id: "tradingview_aff5942",
-            width: 420,
-            height: 340,
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
           });
         </script>
       </div>
@@ -209,9 +223,10 @@
             studies: [],
             allow_symbol_change: true,
             container_id: "tradingview_aff5922",
-            width: 420,
-            height: 340,
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
           });
         </script>
       </div>
@@ -242,9 +257,10 @@
             studies: [],
             allow_symbol_change: true,
             container_id: "tradingview_aff5933",
-            width: 420,
-            height: 340,
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
           });
         </script>
       </div>
@@ -275,9 +291,10 @@
             studies: [],
             allow_symbol_change: true,
             container_id: "tradingview_aff5912",
-            width: 420,
-            height: 340,
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
           });
         </script>
       </div>
@@ -308,9 +325,10 @@
             studies: [],
             allow_symbol_change: true,
             container_id: "tradingview_aff5921",
-            width: 420,
-            height: 340,
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
           });
         </script>
       </div>
@@ -341,9 +359,10 @@
             studies: [],
             allow_symbol_change: true,
             container_id: "tradingview_aff5943",
-            width: 420,
-            height: 340,
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
           });
         </script>
       </div>
@@ -373,9 +392,10 @@
             studies: [],
             allow_symbol_change: true,
             container_id: "tradingview_aff59aa",
-            width: 420,
-            height: 340,
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
           });
         </script>
       </div>
@@ -406,9 +426,10 @@
             studies: [],
             allow_symbol_change: true,
             container_id: "tradingview_aff59aaa",
-            width: 420,
-            height: 340,
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
           });
         </script>
       </div>
@@ -439,9 +460,10 @@
             studies: [],
             allow_symbol_change: true,
             container_id: "tradingview_aff591",
-            width: 420,
-            height: 340,
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
           });
         </script>
       </div>
@@ -450,7 +472,7 @@
     <article class="card">
       <!-- TradingView Widget BEGIN -->
       <div class="tradingview-widget-container">
-        <div id="tradingview_aff59155"></div>
+        <div id="tradingview_aff59"15"5"></div>
         <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FOREXCOM" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
         <script
           type="text/javascript"
@@ -471,10 +493,11 @@
             enable_publishing: false,
             studies: [],
             allow_symbol_change: true,
-            container_id: "tradingview_aff59155",
-            width: 420,
-            height: 340,
+            container_id: "tradingview_aff59"15"5",
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
           });
         </script>
       </div>
@@ -505,9 +528,10 @@
             studies: [],
             allow_symbol_change: true,
             container_id: "tradingview_aff55591aa",
-            width: 420,
-            height: 340,
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
           });
         </script>
       </div>
@@ -538,9 +562,10 @@
             studies: [],
             allow_symbol_change: true,
             container_id: "tradingview_aff591ssEE",
-            width: 420,
-            height: 340,
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
           });
         </script>
       </div>
@@ -571,9 +596,114 @@
             studies: [],
             allow_symbol_change: true,
             container_id: "tradingview_aff591s1sSS",
-            width: 420,
-            height: 340,
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
+          });
+        </script>
+      </div>
+      <!-- TradingView Widget END -->
+    </article>
+    <article class="card">
+      <!-- TradingView Widget BEGIN -->
+      <div class="tradingview-widget-container">
+        <div id="tradingview_aff591sseeBB1"></div>
+        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FOREXCOM" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
+        <script
+          type="text/javascript"
+          src="https://s3.tradingview.com/tv.js"
+        ></script>
+        <script type="text/javascript">
+          new TradingView.widget({
+            autosize: false,
+            symbol: "NASDAQ:NDX",
+            interval: 240,
+            timezone: "Etc/UTC",
+            hide_legend: true,
+
+            theme: "dark",
+            style: "1",
+            locale: "en",
+            toolbar_bg: "#f1f3f6",
+            enable_publishing: false,
+            studies: [],
+            allow_symbol_change: true,
+            container_id: "tradingview_aff591sseeBB1",
+            width: 540,
+            height: 410,
+            hide_top_toolbar: false,
+            studies: [""],
+            hide_volume: true,
+          });
+        </script>
+      </div>
+      <!-- TradingView Widget END -->
+    </article>
+    <article class="card">
+      <!-- TradingView Widget BEGIN -->
+      <div class="tradingview-widget-container">
+        <div id="tradingview_aff591sseeBB22"></div>
+        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FOREXCOM" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
+        <script
+          type="text/javascript"
+          src="https://s3.tradingview.com/tv.js"
+        ></script>
+        <script type="text/javascript">
+          new TradingView.widget({
+            autosize: false,
+            symbol: "BLACKBULL:US30",
+            interval: 240,
+            timezone: "Etc/UTC",
+            hide_legend: true,
+
+            theme: "dark",
+            style: "1",
+            locale: "en",
+            toolbar_bg: "#f1f3f6",
+            enable_publishing: false,
+            studies: [],
+            allow_symbol_change: true,
+            container_id: "tradingview_aff591sseeBB22",
+            width: 540,
+            height: 410,
+            hide_top_toolbar: false,
+            studies: [""],
+            hide_volume: true,
+          });
+        </script>
+      </div>
+      <!-- TradingView Widget END -->
+    </article>
+    <article class="card">
+      <!-- TradingView Widget BEGIN -->
+      <div class="tradingview-widget-container">
+        <div id="tradingview_aff5911n"></div>
+        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FOREXCOM" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
+        <script
+          type="text/javascript"
+          src="https://s3.tradingview.com/tv.js"
+        ></script>
+        <script type="text/javascript">
+          new TradingView.widget({
+            autosize: false,
+            symbol: "FOREXCOM:XAGUSD",
+            interval: 240,
+            timezone: "Etc/UTC",
+            hide_legend: true,
+
+            theme: "dark",
+            style: "1",
+            locale: "en",
+            toolbar_bg: "#f1f3f6",
+            enable_publishing: false,
+            studies: [],
+            allow_symbol_change: true,
+            container_id: "tradingview_aff591n",
+            width: 540,
+            height: 410,
+            hide_top_toolbar: false,
+            studies: [""],
           });
         </script>
       </div>
@@ -604,9 +734,10 @@
             studies: [],
             allow_symbol_change: true,
             container_id: "tradingview_aff591ss11",
-            width: 420,
-            height: 340,
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
           });
         </script>
       </div>
@@ -637,9 +768,10 @@
             studies: [],
             allow_symbol_change: true,
             container_id: "tradingview_aff591ss221",
-            width: 420,
-            height: 340,
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
           });
         </script>
       </div>
@@ -670,9 +802,10 @@
             studies: [],
             allow_symbol_change: true,
             container_id: "tradingview_aff591ss",
-            width: 420,
-            height: 340,
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
           });
         </script>
       </div>
@@ -703,9 +836,10 @@
             studies: [],
             allow_symbol_change: true,
             container_id: "tradingview_aff591s11s",
-            width: 420,
-            height: 340,
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
           });
         </script>
       </div>
@@ -736,9 +870,11 @@
             studies: [],
             allow_symbol_change: true,
             container_id: "tradingview_aff591s1s",
-            width: 420,
-            height: 340,
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
+            studies: [""],
           });
         </script>
       </div>
@@ -769,9 +905,10 @@
             studies: [],
             allow_symbol_change: true,
             container_id: "tradingview_aff5911ss",
-            width: 420,
-            height: 340,
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
           });
         </script>
       </div>
@@ -802,9 +939,10 @@
             studies: [],
             allow_symbol_change: true,
             container_id: "tradingview_aff591sqqs",
-            width: 420,
-            height: 340,
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
           });
         </script>
       </div>
@@ -835,9 +973,10 @@
             studies: [],
             allow_symbol_change: true,
             container_id: "tradingview_aff591ssddDD",
-            width: 420,
-            height: 340,
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
           });
         </script>
       </div>
@@ -868,9 +1007,10 @@
             studies: [],
             allow_symbol_change: true,
             container_id: "tradingview_aff591sseeRR",
-            width: 420,
-            height: 340,
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
           });
         </script>
       </div>
@@ -901,9 +1041,10 @@
             studies: [],
             allow_symbol_change: true,
             container_id: "tradingview_aff591ssddXX",
-            width: 420,
-            height: 340,
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
           });
         </script>
       </div>
@@ -934,9 +1075,10 @@
             studies: [],
             allow_symbol_change: true,
             container_id: "tradingview_aff591sseeBB",
-            width: 420,
-            height: 340,
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
           });
         </script>
       </div>
