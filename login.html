@@ -74,6 +74,7 @@
 
             // Validate username and password
             if (username === "admin" && password === "password123") {
+                sessionStorage.setItem('isLoggedIn', 'true');
                 window.location.href = 'index.html'; // Redirect to index.html on successful login
             } else {
                 document.getElementById('errorMessage').innerText = 'Invalid username or password.';
