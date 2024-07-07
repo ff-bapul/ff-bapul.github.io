@@ -1,11 +1,5 @@
-
-
-
-
-
-
 <!DOCTYPE html>
-<title>Example</title>
+<title>FX View</title>
 <style>
   .cards {
     display: flex;
@@ -13,12 +7,13 @@
     align-items: center;
   }
   .card {
-    /* flex: 0 0 420px; */
+    /* flex: 0 0 540px; */
     /* display: flex; */
+    /* BB@tv-basicstudies */
     margin: 0px;
     /* border: 1px solid #ccc; */
     /* box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3); */
-    /* height: 340px !important; */
+    /* height: 410px !important; */
   }
 
   body {
@@ -84,7 +79,8 @@
     <li><a href="index.html">Home</a></li>
     <li><a href="fx_1d.html">Daily</a></li>
     <li><a href="fx_4h.html">4-Hour</a></li>
-    <li><a href="fx_1h.html">4-Hour</a></li>
+    <li><a href="intraday.html">IMP(15min)</a></li>
+    <li><a href="weekly.html"> Weekly </a></li>
     <li class="dropdown">
       <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
       <div class="dropdown-content">
@@ -97,7 +93,7 @@
       <!-- TradingView Widget BEGIN -->
       <div class="tradingview-widget-container">
         <div id="tradingview_aff59"></div>
-        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=OANDA" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
+        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FOREXCOM" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
         <script
           type="text/javascript"
           src="https://s3.tradingview.com/tv.js"
@@ -113,7 +109,7 @@
         <script type="text/javascript">
           new TradingView.widget({
             autosize: false,
-            symbol: "OANDA:XAUUSD",
+            symbol: "FOREXCOM:XAUUSD",
             interval: 60,
             timezone: "Etc/UTC",
             hide_legend: true,
@@ -126,9 +122,10 @@
             studies: [],
             allow_symbol_change: true,
             container_id: "tradingview_aff59",
-            width: 420,
-            height: 340,
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
           });
         </script>
       </div>
@@ -138,7 +135,7 @@
       <!-- TradingView Widget BEGIN -->
       <div class="tradingview-widget-container">
         <div id="tradingview_aff5911"></div>
-        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=OANDA" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
+        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FOREXCOM" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
         <script
           type="text/javascript"
           src="https://s3.tradingview.com/tv.js"
@@ -146,11 +143,11 @@
         <script type="text/javascript">
           new TradingView.widget({
             autosize: false,
-            symbol: "COINBASE:BTCUSD",
+            symbol: "CAPITALCOM:DXY",
             interval: 60,
             timezone: "Etc/UTC",
             hide_legend: true,
-
+            hide_volume: true,
             theme: "dark",
             style: "1",
             locale: "en",
@@ -159,9 +156,10 @@
             studies: [],
             allow_symbol_change: true,
             container_id: "tradingview_aff5911",
-            width: 420,
-            height: 340,
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
           });
         </script>
       </div>
@@ -171,7 +169,7 @@
       <!-- TradingView Widget BEGIN -->
       <div class="tradingview-widget-container">
         <div id="tradingview_aff5942"></div>
-        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=OANDA" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
+        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FOREXCOM" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
         <script
           type="text/javascript"
           src="https://s3.tradingview.com/tv.js"
@@ -179,7 +177,7 @@
         <script type="text/javascript">
           new TradingView.widget({
             autosize: false,
-            symbol: "OANDA:EURUSD",
+            symbol: "FOREXCOM:EURUSD",
             interval: 60,
             timezone: "Etc/UTC",
             hide_legend: true,
@@ -191,9 +189,10 @@
             studies: [],
             allow_symbol_change: true,
             container_id: "tradingview_aff5942",
-            width: 420,
-            height: 340,
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
           });
         </script>
       </div>
@@ -203,7 +202,7 @@
       <!-- TradingView Widget BEGIN -->
       <div class="tradingview-widget-container">
         <div id="tradingview_aff5922"></div>
-        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=OANDA" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
+        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FOREXCOM" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
         <script
           type="text/javascript"
           src="https://s3.tradingview.com/tv.js"
@@ -211,7 +210,7 @@
         <script type="text/javascript">
           new TradingView.widget({
             autosize: false,
-            symbol: "OANDA:GBPUSD",
+            symbol: "FOREXCOM:GBPUSD",
             interval: 60,
             timezone: "Etc/UTC",
             hide_legend: true,
@@ -224,9 +223,10 @@
             studies: [],
             allow_symbol_change: true,
             container_id: "tradingview_aff5922",
-            width: 420,
-            height: 340,
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
           });
         </script>
       </div>
@@ -236,7 +236,7 @@
       <!-- TradingView Widget BEGIN -->
       <div class="tradingview-widget-container">
         <div id="tradingview_aff5933"></div>
-        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=OANDA" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
+        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FOREXCOM" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
         <script
           type="text/javascript"
           src="https://s3.tradingview.com/tv.js"
@@ -244,7 +244,7 @@
         <script type="text/javascript">
           new TradingView.widget({
             autosize: false,
-            symbol: "OANDA:USDCAD",
+            symbol: "FOREXCOM:USDCAD",
             interval: 60,
             timezone: "Etc/UTC",
             hide_legend: true,
@@ -257,9 +257,10 @@
             studies: [],
             allow_symbol_change: true,
             container_id: "tradingview_aff5933",
-            width: 420,
-            height: 340,
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
           });
         </script>
       </div>
@@ -269,7 +270,7 @@
       <!-- TradingView Widget BEGIN -->
       <div class="tradingview-widget-container">
         <div id="tradingview_aff5912"></div>
-        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=OANDA" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
+        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FOREXCOM" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
         <script
           type="text/javascript"
           src="https://s3.tradingview.com/tv.js"
@@ -277,7 +278,7 @@
         <script type="text/javascript">
           new TradingView.widget({
             autosize: false,
-            symbol: "OANDA:USDJPY",
+            symbol: "FOREXCOM:USDJPY",
             interval: 60,
             timezone: "Etc/UTC",
             hide_legend: true,
@@ -290,9 +291,10 @@
             studies: [],
             allow_symbol_change: true,
             container_id: "tradingview_aff5912",
-            width: 420,
-            height: 340,
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
           });
         </script>
       </div>
@@ -302,7 +304,7 @@
       <!-- TradingView Widget BEGIN -->
       <div class="tradingview-widget-container">
         <div id="tradingview_aff5921"></div>
-        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=OANDA" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
+        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FOREXCOM" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
         <script
           type="text/javascript"
           src="https://s3.tradingview.com/tv.js"
@@ -310,7 +312,7 @@
         <script type="text/javascript">
           new TradingView.widget({
             autosize: false,
-            symbol: "OANDA:AUDUSD",
+            symbol: "FOREXCOM:AUDUSD",
             interval: 60,
             timezone: "Etc/UTC",
             hide_legend: true,
@@ -323,9 +325,10 @@
             studies: [],
             allow_symbol_change: true,
             container_id: "tradingview_aff5921",
-            width: 420,
-            height: 340,
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
           });
         </script>
       </div>
@@ -335,7 +338,7 @@
       <!-- TradingView Widget BEGIN -->
       <div class="tradingview-widget-container">
         <div id="tradingview_aff5943"></div>
-        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=OANDA" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
+        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FOREXCOM" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
         <script
           type="text/javascript"
           src="https://s3.tradingview.com/tv.js"
@@ -343,7 +346,7 @@
         <script type="text/javascript">
           new TradingView.widget({
             autosize: false,
-            symbol: "OANDA:NZDUSD",
+            symbol: "FOREXCOM:NZDUSD",
             hide_legend: true,
             interval: 60,
             timezone: "Etc/UTC",
@@ -356,9 +359,10 @@
             studies: [],
             allow_symbol_change: true,
             container_id: "tradingview_aff5943",
-            width: 420,
-            height: 340,
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
           });
         </script>
       </div>
@@ -368,7 +372,7 @@
       <!-- TradingView Widget BEGIN -->
       <div class="tradingview-widget-container">
         <div id="tradingview_aff59aa"></div>
-        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=OANDA" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
+        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FOREXCOM" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
         <script
           type="text/javascript"
           src="https://s3.tradingview.com/tv.js"
@@ -376,7 +380,7 @@
         <script type="text/javascript">
           new TradingView.widget({
             autosize: false,
-            symbol: "OANDA:CADJPY",
+            symbol: "FOREXCOM:CADJPY",
             hide_legend: true,
             interval: 60,
             timezone: "Etc/UTC",
@@ -388,9 +392,10 @@
             studies: [],
             allow_symbol_change: true,
             container_id: "tradingview_aff59aa",
-            width: 420,
-            height: 340,
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
           });
         </script>
       </div>
@@ -400,7 +405,7 @@
       <!-- TradingView Widget BEGIN -->
       <div class="tradingview-widget-container">
         <div id="tradingview_aff59aaa"></div>
-        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=OANDA" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
+        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FOREXCOM" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
         <script
           type="text/javascript"
           src="https://s3.tradingview.com/tv.js"
@@ -408,7 +413,7 @@
         <script type="text/javascript">
           new TradingView.widget({
             autosize: false,
-            symbol: "OANDA:GBPJPY",
+            symbol: "FOREXCOM:GBPJPY",
             interval: 60,
             timezone: "Etc/UTC",
             hide_legend: true,
@@ -421,9 +426,10 @@
             studies: [],
             allow_symbol_change: true,
             container_id: "tradingview_aff59aaa",
-            width: 420,
-            height: 340,
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
           });
         </script>
       </div>
@@ -433,7 +439,7 @@
       <!-- TradingView Widget BEGIN -->
       <div class="tradingview-widget-container">
         <div id="tradingview_aff591"></div>
-        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=OANDA" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
+        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FOREXCOM" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
         <script
           type="text/javascript"
           src="https://s3.tradingview.com/tv.js"
@@ -441,7 +447,7 @@
         <script type="text/javascript">
           new TradingView.widget({
             autosize: false,
-            symbol: "OANDA:AUDJPY",
+            symbol: "FOREXCOM:AUDJPY",
             interval: 60,
             timezone: "Etc/UTC",
             hide_legend: true,
@@ -454,9 +460,10 @@
             studies: [],
             allow_symbol_change: true,
             container_id: "tradingview_aff591",
-            width: 420,
-            height: 340,
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
           });
         </script>
       </div>
@@ -465,8 +472,8 @@
     <article class="card">
       <!-- TradingView Widget BEGIN -->
       <div class="tradingview-widget-container">
-        <div id="tradingview_aff59155"></div>
-        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=OANDA" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
+        <div id="tradingview_aff59"15"5"></div>
+        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FOREXCOM" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
         <script
           type="text/javascript"
           src="https://s3.tradingview.com/tv.js"
@@ -474,7 +481,7 @@
         <script type="text/javascript">
           new TradingView.widget({
             autosize: false,
-            symbol: "OANDA:NZDJPY",
+            symbol: "FOREXCOM:NZDJPY",
             interval: 60,
             timezone: "Etc/UTC",
             hide_legend: true,
@@ -486,10 +493,11 @@
             enable_publishing: false,
             studies: [],
             allow_symbol_change: true,
-            container_id: "tradingview_aff59155",
-            width: 420,
-            height: 340,
+            container_id: "tradingview_aff59"15"5",
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
           });
         </script>
       </div>
@@ -499,7 +507,7 @@
       <!-- TradingView Widget BEGIN -->
       <div class="tradingview-widget-container">
         <div id="tradingview_aff55591aa"></div>
-        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=OANDA" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
+        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FOREXCOM" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
         <script
           type="text/javascript"
           src="https://s3.tradingview.com/tv.js"
@@ -507,7 +515,7 @@
         <script type="text/javascript">
           new TradingView.widget({
             autosize: false,
-            symbol: "OANDA:EURJPY",
+            symbol: "FOREXCOM:EURJPY",
             interval: 60,
             timezone: "Etc/UTC",
             hide_legend: true,
@@ -520,9 +528,10 @@
             studies: [],
             allow_symbol_change: true,
             container_id: "tradingview_aff55591aa",
-            width: 420,
-            height: 340,
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
           });
         </script>
       </div>
@@ -532,7 +541,7 @@
       <!-- TradingView Widget BEGIN -->
       <div class="tradingview-widget-container">
         <div id="tradingview_aff591ssEE"></div>
-        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=OANDA" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
+        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FOREXCOM" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
         <script
           type="text/javascript"
           src="https://s3.tradingview.com/tv.js"
@@ -540,7 +549,7 @@
         <script type="text/javascript">
           new TradingView.widget({
             autosize: false,
-            symbol: "OANDA:CHFJPY",
+            symbol: "FOREXCOM:CHFJPY",
             interval: 60,
             timezone: "Etc/UTC",
             hide_legend: true,
@@ -553,9 +562,10 @@
             studies: [],
             allow_symbol_change: true,
             container_id: "tradingview_aff591ssEE",
-            width: 420,
-            height: 340,
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
           });
         </script>
       </div>
@@ -565,7 +575,7 @@
       <!-- TradingView Widget BEGIN -->
       <div class="tradingview-widget-container">
         <div id="tradingview_aff591s1sSS"></div>
-        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=OANDA" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
+        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FOREXCOM" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
         <script
           type="text/javascript"
           src="https://s3.tradingview.com/tv.js"
@@ -573,7 +583,7 @@
         <script type="text/javascript">
           new TradingView.widget({
             autosize: false,
-            symbol: "OANDA:USDCHF",
+            symbol: "FOREXCOM:USDCHF",
             interval: 60,
             timezone: "Etc/UTC",
             hide_legend: true,
@@ -586,9 +596,114 @@
             studies: [],
             allow_symbol_change: true,
             container_id: "tradingview_aff591s1sSS",
-            width: 420,
-            height: 340,
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
+          });
+        </script>
+      </div>
+      <!-- TradingView Widget END -->
+    </article>
+    <article class="card">
+      <!-- TradingView Widget BEGIN -->
+      <div class="tradingview-widget-container">
+        <div id="tradingview_aff591sseeBB1"></div>
+        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FOREXCOM" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
+        <script
+          type="text/javascript"
+          src="https://s3.tradingview.com/tv.js"
+        ></script>
+        <script type="text/javascript">
+          new TradingView.widget({
+            autosize: false,
+            symbol: "NASDAQ:NDX",
+            interval: 60,
+            timezone: "Etc/UTC",
+            hide_legend: true,
+
+            theme: "dark",
+            style: "1",
+            locale: "en",
+            toolbar_bg: "#f1f3f6",
+            enable_publishing: false,
+            studies: [],
+            allow_symbol_change: true,
+            container_id: "tradingview_aff591sseeBB1",
+            width: 540,
+            height: 410,
+            hide_top_toolbar: false,
+            studies: [""],
+            hide_volume: true,
+          });
+        </script>
+      </div>
+      <!-- TradingView Widget END -->
+    </article>
+    <article class="card">
+      <!-- TradingView Widget BEGIN -->
+      <div class="tradingview-widget-container">
+        <div id="tradingview_aff591sseeBB22"></div>
+        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FOREXCOM" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
+        <script
+          type="text/javascript"
+          src="https://s3.tradingview.com/tv.js"
+        ></script>
+        <script type="text/javascript">
+          new TradingView.widget({
+            autosize: false,
+            symbol: "BLACKBULL:US30",
+            interval: 60,
+            timezone: "Etc/UTC",
+            hide_legend: true,
+
+            theme: "dark",
+            style: "1",
+            locale: "en",
+            toolbar_bg: "#f1f3f6",
+            enable_publishing: false,
+            studies: [],
+            allow_symbol_change: true,
+            container_id: "tradingview_aff591sseeBB22",
+            width: 540,
+            height: 410,
+            hide_top_toolbar: false,
+            studies: [""],
+            hide_volume: true,
+          });
+        </script>
+      </div>
+      <!-- TradingView Widget END -->
+    </article>
+    <article class="card">
+      <!-- TradingView Widget BEGIN -->
+      <div class="tradingview-widget-container">
+        <div id="tradingview_aff5911n"></div>
+        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FOREXCOM" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
+        <script
+          type="text/javascript"
+          src="https://s3.tradingview.com/tv.js"
+        ></script>
+        <script type="text/javascript">
+          new TradingView.widget({
+            autosize: false,
+            symbol: "FOREXCOM:XAGUSD",
+            interval: 60,
+            timezone: "Etc/UTC",
+            hide_legend: true,
+
+            theme: "dark",
+            style: "1",
+            locale: "en",
+            toolbar_bg: "#f1f3f6",
+            enable_publishing: false,
+            studies: [],
+            allow_symbol_change: true,
+            container_id: "tradingview_aff591n",
+            width: 540,
+            height: 410,
+            hide_top_toolbar: false,
+            studies: [""],
           });
         </script>
       </div>
@@ -598,7 +713,7 @@
       <!-- TradingView Widget BEGIN -->
       <div class="tradingview-widget-container">
         <div id="tradingview_aff591ss11"></div>
-        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=OANDA" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
+        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FOREXCOM" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
         <script
           type="text/javascript"
           src="https://s3.tradingview.com/tv.js"
@@ -606,7 +721,7 @@
         <script type="text/javascript">
           new TradingView.widget({
             autosize: false,
-            symbol: "OANDA:CADCHF",
+            symbol: "FOREXCOM:CADCHF",
             interval: 60,
             timezone: "Etc/UTC",
             hide_legend: true,
@@ -619,9 +734,10 @@
             studies: [],
             allow_symbol_change: true,
             container_id: "tradingview_aff591ss11",
-            width: 420,
-            height: 340,
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
           });
         </script>
       </div>
@@ -631,7 +747,7 @@
       <!-- TradingView Widget BEGIN -->
       <div class="tradingview-widget-container">
         <div id="tradingview_aff591ss221"></div>
-        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=OANDA" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
+        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FOREXCOM" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
         <script
           type="text/javascript"
           src="https://s3.tradingview.com/tv.js"
@@ -639,7 +755,7 @@
         <script type="text/javascript">
           new TradingView.widget({
             autosize: false,
-            symbol: "OANDA:AUDCHF",
+            symbol: "FOREXCOM:AUDCHF",
             interval: 60,
             timezone: "Etc/UTC",
             hide_legend: true,
@@ -652,9 +768,10 @@
             studies: [],
             allow_symbol_change: true,
             container_id: "tradingview_aff591ss221",
-            width: 420,
-            height: 340,
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
           });
         </script>
       </div>
@@ -664,7 +781,7 @@
       <!-- TradingView Widget BEGIN -->
       <div class="tradingview-widget-container">
         <div id="tradingview_aff591ss"></div>
-        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=OANDA" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
+        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FOREXCOM" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
         <script
           type="text/javascript"
           src="https://s3.tradingview.com/tv.js"
@@ -672,7 +789,7 @@
         <script type="text/javascript">
           new TradingView.widget({
             autosize: false,
-            symbol: "OANDA:NZDCHF",
+            symbol: "FOREXCOM:NZDCHF",
             interval: 60,
             timezone: "Etc/UTC",
             hide_legend: true,
@@ -685,9 +802,10 @@
             studies: [],
             allow_symbol_change: true,
             container_id: "tradingview_aff591ss",
-            width: 420,
-            height: 340,
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
           });
         </script>
       </div>
@@ -697,7 +815,7 @@
       <!-- TradingView Widget BEGIN -->
       <div class="tradingview-widget-container">
         <div id="tradingview_aff591s11s"></div>
-        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=OANDA" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
+        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FOREXCOM" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
         <script
           type="text/javascript"
           src="https://s3.tradingview.com/tv.js"
@@ -705,7 +823,7 @@
         <script type="text/javascript">
           new TradingView.widget({
             autosize: false,
-            symbol: "OANDA:EURCAD",
+            symbol: "FOREXCOM:EURCAD",
             interval: 60,
             timezone: "Etc/UTC",
             hide_legend: true,
@@ -718,9 +836,10 @@
             studies: [],
             allow_symbol_change: true,
             container_id: "tradingview_aff591s11s",
-            width: 420,
-            height: 340,
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
           });
         </script>
       </div>
@@ -730,7 +849,7 @@
       <!-- TradingView Widget BEGIN -->
       <div class="tradingview-widget-container">
         <div id="tradingview_aff591s1s"></div>
-        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=OANDA" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
+        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FOREXCOM" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
         <script
           type="text/javascript"
           src="https://s3.tradingview.com/tv.js"
@@ -738,7 +857,7 @@
         <script type="text/javascript">
           new TradingView.widget({
             autosize: false,
-            symbol: "OANDA:GBPCAD",
+            symbol: "FOREXCOM:GBPCAD",
             interval: 60,
             timezone: "Etc/UTC",
             hide_legend: true,
@@ -751,9 +870,11 @@
             studies: [],
             allow_symbol_change: true,
             container_id: "tradingview_aff591s1s",
-            width: 420,
-            height: 340,
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
+            studies: [""],
           });
         </script>
       </div>
@@ -763,7 +884,7 @@
       <!-- TradingView Widget BEGIN -->
       <div class="tradingview-widget-container">
         <div id="tradingview_aff5911ss"></div>
-        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=OANDA" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
+        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FOREXCOM" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
         <script
           type="text/javascript"
           src="https://s3.tradingview.com/tv.js"
@@ -771,7 +892,7 @@
         <script type="text/javascript">
           new TradingView.widget({
             autosize: false,
-            symbol: "OANDA:AUDCAD",
+            symbol: "FOREXCOM:AUDCAD",
             interval: 60,
             timezone: "Etc/UTC",
             hide_legend: true,
@@ -784,9 +905,10 @@
             studies: [],
             allow_symbol_change: true,
             container_id: "tradingview_aff5911ss",
-            width: 420,
-            height: 340,
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
           });
         </script>
       </div>
@@ -796,7 +918,7 @@
       <!-- TradingView Widget BEGIN -->
       <div class="tradingview-widget-container">
         <div id="tradingview_aff591sqqs"></div>
-        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=OANDA" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
+        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FOREXCOM" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
         <script
           type="text/javascript"
           src="https://s3.tradingview.com/tv.js"
@@ -804,7 +926,7 @@
         <script type="text/javascript">
           new TradingView.widget({
             autosize: false,
-            symbol: "OANDA:NZDCAD",
+            symbol: "FOREXCOM:NZDCAD",
             interval: 60,
             timezone: "Etc/UTC",
             hide_legend: true,
@@ -817,9 +939,10 @@
             studies: [],
             allow_symbol_change: true,
             container_id: "tradingview_aff591sqqs",
-            width: 420,
-            height: 340,
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
           });
         </script>
       </div>
@@ -829,7 +952,7 @@
       <!-- TradingView Widget BEGIN -->
       <div class="tradingview-widget-container">
         <div id="tradingview_aff591ssddDD"></div>
-        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=OANDA" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
+        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FOREXCOM" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
         <script
           type="text/javascript"
           src="https://s3.tradingview.com/tv.js"
@@ -837,7 +960,7 @@
         <script type="text/javascript">
           new TradingView.widget({
             autosize: false,
-            symbol: "OANDA:EURAUD",
+            symbol: "FOREXCOM:EURAUD",
             interval: 60,
             timezone: "Etc/UTC",
             hide_legend: true,
@@ -850,9 +973,10 @@
             studies: [],
             allow_symbol_change: true,
             container_id: "tradingview_aff591ssddDD",
-            width: 420,
-            height: 340,
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
           });
         </script>
       </div>
@@ -862,7 +986,7 @@
       <!-- TradingView Widget BEGIN -->
       <div class="tradingview-widget-container">
         <div id="tradingview_aff591sseeRR"></div>
-        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=OANDA" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
+        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FOREXCOM" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
         <script
           type="text/javascript"
           src="https://s3.tradingview.com/tv.js"
@@ -870,7 +994,7 @@
         <script type="text/javascript">
           new TradingView.widget({
             autosize: false,
-            symbol: "OANDA:EURNZD",
+            symbol: "FOREXCOM:EURNZD",
             interval: 60,
             timezone: "Etc/UTC",
             hide_legend: true,
@@ -883,9 +1007,10 @@
             studies: [],
             allow_symbol_change: true,
             container_id: "tradingview_aff591sseeRR",
-            width: 420,
-            height: 340,
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
           });
         </script>
       </div>
@@ -895,7 +1020,7 @@
       <!-- TradingView Widget BEGIN -->
       <div class="tradingview-widget-container">
         <div id="tradingview_aff591ssddXX"></div>
-        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=OANDA" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
+        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FOREXCOM" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
         <script
           type="text/javascript"
           src="https://s3.tradingview.com/tv.js"
@@ -903,7 +1028,7 @@
         <script type="text/javascript">
           new TradingView.widget({
             autosize: false,
-            symbol: "OANDA:GBPAUD",
+            symbol: "FOREXCOM:GBPAUD",
             interval: 60,
             timezone: "Etc/UTC",
             hide_legend: true,
@@ -916,9 +1041,10 @@
             studies: [],
             allow_symbol_change: true,
             container_id: "tradingview_aff591ssddXX",
-            width: 420,
-            height: 340,
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
           });
         </script>
       </div>
@@ -928,7 +1054,7 @@
       <!-- TradingView Widget BEGIN -->
       <div class="tradingview-widget-container">
         <div id="tradingview_aff591sseeBB"></div>
-        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=OANDA" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
+        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FOREXCOM" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div> -->
         <script
           type="text/javascript"
           src="https://s3.tradingview.com/tv.js"
@@ -936,7 +1062,7 @@
         <script type="text/javascript">
           new TradingView.widget({
             autosize: false,
-            symbol: "OANDA:GBPNZD",
+            symbol: "FOREXCOM:GBPNZD",
             interval: 60,
             timezone: "Etc/UTC",
             hide_legend: true,
@@ -949,9 +1075,10 @@
             studies: [],
             allow_symbol_change: true,
             container_id: "tradingview_aff591sseeBB",
-            width: 420,
-            height: 340,
+            width: 540,
+            height: 410,
             hide_top_toolbar: false,
+            studies: [""],
           });
         </script>
       </div>
